@@ -1,0 +1,159 @@
+  <!--
+// BitEastwood Top 10 Crypto Flip Ticker
+// Made for CTTV https://www.Rank1.tv/cryptotraderstv
+// Top 10 list pulled from https://coinmarketcap.com
+// code modified from https://codepen.io/NerdOrDie/pen/vNEvee
+-->
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Top 10 Crypto</title>
+      <link rel="stylesheet" href="./css/style.css">
+      <link rel="icon" href="favicon.ico" type="image/x-icon">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.0/vue.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+</head>
+
+<body>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'> 
+
+<div id="popup-container">
+   <div class="popup rank1-pop" data-box="enableRank1">
+     <div class="left">
+       <span class="rank1"></span>
+     </div>
+     <div class="right rank1">
+       <span data-name="rank1">         <table id="ticker1">
+          <tbody>
+          </tbody>
+          </table></span>
+     </div>
+   </div>
+   <div class="popup rank2-pop" data-box="enableRank2">
+     <div class="left">
+       <span class="rank2"></span>
+     </div>
+     <div class="right rank2">
+       <span data-name="rank2">         <table id="ticker2">
+          <tbody>
+          </tbody>
+          </table></span>
+     </div>
+   </div>
+   <div class="popup rank3-pop" data-box="enableRank3">
+     <div class="left">
+       <span class="rank3"></span>
+     </div>
+     <div class="right rank3">
+       <span data-name="rank3">         <table id="ticker3">
+          <tbody>
+          </tbody>
+          </table></span>
+     </div>
+   </div> 
+   <div class="popup rank4-pop" data-box="enableRank4">
+     <div class="left">
+       <span class="rank4"></span>
+     </div>
+     <div class="right rank4">
+       <span data-name="rank4">         <table id="ticker4">
+          <tbody>
+          </tbody>
+          </table></span>
+     </div>
+   </div>
+   <div class="popup rank5-pop" data-box="enableRank5">
+     <div class="left">
+       <span class="rank5"></span>
+     </div>
+     <div class="right rank5">
+       <span data-name="rank5">         <table id="ticker5">
+          <tbody>
+          </tbody>
+          </table></span>
+     </div>
+   </div>
+   <div class="popup rank6-pop" data-box="enableRank6">
+     <div class="left">
+       <span class="rank6"></span>
+     </div>
+     <div class="right rank6">
+       <span data-name="rank6">         <table id="ticker6">
+          <tbody>
+          </tbody>
+          </table></span>
+     </div>
+   </div>
+   <div class="popup rank7-pop" data-box="enableRank7">
+     <div class="left">
+       <span class="rank7"></span>
+     </div>
+     <div class="right rank7">
+       <span data-name="rank7">         <table id="ticker7">
+          <tbody>
+          </tbody>
+          </table></span>
+     </div>
+   </div>
+   <div class="popup rank8-pop" data-box="enableRank8">
+     <div class="left">
+       <span class="rank8"></span>
+     </div>
+     <div class="right rank8">
+       <span data-name="rank8">         <table id="ticker8">
+          <tbody>
+          </tbody>
+          </table></span>
+     </div>
+   </div>
+  <div class="popup rank9-pop" data-box="enableRank9">
+     <div class="left">
+       <span class="rank9"></span>
+     </div>
+     <div class="right rank9">
+       <span data-name="rank9">         <table id="ticker9">
+          <tbody>
+          </tbody>
+          </table></span>
+     </div>
+   </div>
+  <div class="popup rank10-pop" data-box="enableRank10">
+     <div class="left">
+       <span class="rank10"></span>
+     </div>
+     <div class="right rank10">
+       <span data-name="rank10">         <table id="ticker10">
+          <tbody>
+          </tbody>
+          </table></span>
+     </div>
+   </div>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.js'></script>
+
+  
+
+<script  src="js/index.js"></script>
+
+<script>
+    function arrayToTable(tableData) {
+        var table = $('<table></table>');
+        $(tableData).each(function (i, rowData) {
+            var row = $('<tr></tr>');
+            $(rowData).each(function (j, cellData) {
+                row.append($('<td>'+cellData+'</td>'));
+            });
+            table.append(row);
+        });
+        return table;
+    }
+
+</script>
+
+
+</body>
+
+</html>
