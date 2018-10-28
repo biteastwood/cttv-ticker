@@ -1,9 +1,10 @@
-body {
+.body {
   background: transparent;
 }
 
 .popup-container {
   width: 470px;
+  margin-top: 0px;
   height: 60px;
   position: absolute;
   top: 0;
@@ -13,12 +14,14 @@ body {
 
 .popup {
   width: 470x;
+  margin-top: 0px;
   height: 60px;
   background: transparent;
   display: none;
 }
 .popup .left {
   position: relative;
+  margin-top: 0px;
   height: 60px;
   width: 60px;
   float: left;
@@ -28,7 +31,7 @@ body {
   line-height: 60px;
   width: 60px;
   height: 60px;
-  content: "";
+  margin-top: 0px;
   display: block;
   text-align: center;
   color: #000000;

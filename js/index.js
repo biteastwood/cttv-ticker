@@ -3,148 +3,210 @@
 // Top 10 list pulled from https://coinmarketcap.com
 // code modified from https://codepen.io/NerdOrDie/pen/vNEvee
 
-
+/// symbol functions
 $(function() {
-
   var ticker = [];
-
   $.getJSON('https://api.coinmarketcap.com/v2/ticker/?start=1&limit=1&sort=rank&structure=array', function(data) {
       $.each(data.data, function(i, f) {
-         var tblRow = "<tr>" + "<td>" + "<img src='./SVG/"+f.symbol+".svg' width='65px' height='65px'>  "+ f.rank + ") </td>" +
+         var tblRow = "<tr>" + "<td>" + "<img src='./SVG/"+f.symbol+".svg' width='65px' height='65px'>" + "</td>" + "</tr>"
+          $(tblRow).appendTo("#symbol1 tbody");
+    });
+  });
+});
+$(function() {
+  var ticker = [];
+  $.getJSON('https://api.coinmarketcap.com/v2/ticker/?start=2&limit=1&sort=rank&structure=array', function(data) {
+      $.each(data.data, function(i, f) {
+         var tblRow = "<tr>" + "<td>" + "<img src='./SVG/"+f.symbol+".svg' width='65px' height='65px'>" + "</td>" + "</tr>"
+          $(tblRow).appendTo("#symbol2 tbody");
+    });
+  });
+});
+$(function() {
+  var ticker = [];
+  $.getJSON('https://api.coinmarketcap.com/v2/ticker/?start=3&limit=1&sort=rank&structure=array', function(data) {
+      $.each(data.data, function(i, f) {
+         var tblRow = "<tr>" + "<td>" + "<img src='./SVG/"+f.symbol+".svg' width='65px' height='65px'>" + "</td>" + "</tr>"
+          $(tblRow).appendTo("#symbol3 tbody");
+    });
+  });
+});
+$(function() {
+  var ticker = [];
+  $.getJSON('https://api.coinmarketcap.com/v2/ticker/?start=4&limit=1&sort=rank&structure=array', function(data) {
+      $.each(data.data, function(i, f) {
+         var tblRow = "<tr>" + "<td>" + "<img src='./SVG/"+f.symbol+".svg' width='65px' height='65px'>" + "</td>" + "</tr>"
+          $(tblRow).appendTo("#symbol4 tbody");
+    });
+  });
+});
+$(function() {
+  var ticker = [];
+  $.getJSON('https://api.coinmarketcap.com/v2/ticker/?start=5&limit=1&sort=rank&structure=array', function(data) {
+      $.each(data.data, function(i, f) {
+         var tblRow = "<tr>" + "<td>" + "<img src='./SVG/"+f.symbol+".svg' width='65px' height='65px'>" + "</td>" + "</tr>"
+          $(tblRow).appendTo("#symbol5 tbody");
+    });
+  });
+});
+$(function() {
+  var ticker = [];
+  $.getJSON('https://api.coinmarketcap.com/v2/ticker/?start=6&limit=1&sort=rank&structure=array', function(data) {
+      $.each(data.data, function(i, f) {
+         var tblRow = "<tr>" + "<td>" + "<img src='./SVG/"+f.symbol+".svg' width='65px' height='65px'>" + "</td>" + "</tr>"
+          $(tblRow).appendTo("#symbol6 tbody");
+    });
+  });
+});
+$(function() {
+  var ticker = [];
+  $.getJSON('https://api.coinmarketcap.com/v2/ticker/?start=7&limit=1&sort=rank&structure=array', function(data) {
+      $.each(data.data, function(i, f) {
+         var tblRow = "<tr>" + "<td>" + "<img src='./SVG/"+f.symbol+".svg' width='65px' height='65px'>" + "</td>" + "</tr>"
+          $(tblRow).appendTo("#symbol7 tbody");
+    });
+  });
+});
+$(function() {
+  var ticker = [];
+  $.getJSON('https://api.coinmarketcap.com/v2/ticker/?start=8&limit=1&sort=rank&structure=array', function(data) {
+      $.each(data.data, function(i, f) {
+         var tblRow = "<tr>" + "<td>" + "<img src='./SVG/"+f.symbol+".svg' width='65px' height='65px'>" + "</td>" + "</tr>"
+          $(tblRow).appendTo("#symbol8 tbody");
+    });
+  });
+});
+$(function() {
+  var ticker = [];
+  $.getJSON('https://api.coinmarketcap.com/v2/ticker/?start=9&limit=1&sort=rank&structure=array', function(data) {
+      $.each(data.data, function(i, f) {
+         var tblRow = "<tr>" + "<td>" + "<img src='./SVG/"+f.symbol+".svg' width='65px' height='65px'>" + "</td>" + "</tr>"
+          $(tblRow).appendTo("#symbol9 tbody");
+    });
+  });
+});
+$(function() {
+  var ticker = [];
+  $.getJSON('https://api.coinmarketcap.com/v2/ticker/?start=10&limit=1&sort=rank&structure=array', function(data) {
+      $.each(data.data, function(i, f) {
+         var tblRow = "<tr>" + "<td>" + "<img src='./SVG/"+f.symbol+".svg' width='65px' height='65px'>" + "</td>" + "</tr>"
+          $(tblRow).appendTo("#symbol10 tbody");
+    });
+  });
+});
+
+
+
+/// ticker functions
+$(function() {
+  var ticker = [];
+  $.getJSON('https://api.coinmarketcap.com/v2/ticker/?start=1&limit=1&sort=rank&structure=array', function(data) {
+      $.each(data.data, function(i, f) {
+         var tblRow = "<tr>" + "<td>" + f.rank + ") </td>" +
           "<td>" + f.symbol + "</td>" + "<td> $" + f.quotes.USD.price + "</td>" + "</tr>"
           $(tblRow).appendTo("#ticker1 tbody");
     });
-
   });
-
 });
 
 
 $(function() {
-
   var ticker = [];
-
   $.getJSON('https://api.coinmarketcap.com/v2/ticker/?start=2&limit=1&sort=rank&structure=array', function(data) {
       $.each(data.data, function(i, f) {
-         var tblRow = "<tr>" + "<td>" + "<img src='./SVG/"+f.symbol+".svg' width='65px' height='65px'>  "+ f.rank + ") </td>" +
+         var tblRow = "<tr>" + "<td>" + f.rank + ") </td>" +
           "<td>" + f.symbol + "</td>" + "<td> $" + f.quotes.USD.price + "</td>" + "</tr>"
           $(tblRow).appendTo("#ticker2 tbody");
     });
-
   });
-
 });
+
 $(function() {
-
   var ticker = [];
-
   $.getJSON('https://api.coinmarketcap.com/v2/ticker/?start=3&limit=1&sort=rank&structure=array', function(data) {
       $.each(data.data, function(i, f) {
-         var tblRow = "<tr>" + "<td>" + "<img src='./SVG/"+f.symbol+".svg' width='65px' height='65px'>  "+ f.rank + ") </td>" +
+         var tblRow = "<tr>" + "<td>" + f.rank + ") </td>" +
           "<td>" + f.symbol + "</td>" + "<td> $" + f.quotes.USD.price + "</td>" + "</tr>"
           $(tblRow).appendTo("#ticker3 tbody");
     });
-
   });
-
 });
+
 $(function() {
-
   var ticker = [];
-
   $.getJSON('https://api.coinmarketcap.com/v2/ticker/?start=4&limit=1&sort=rank&structure=array', function(data) {
       $.each(data.data, function(i, f) {
-         var tblRow = "<tr>" + "<td>" + "<img src='./SVG/"+f.symbol+".svg' width='65px' height='65px'>  "+ f.rank + ") </td>" +
+         var tblRow = "<tr>" + "<td>" + f.rank + ") </td>" +
           "<td>" + f.symbol + "</td>" + "<td> $" + f.quotes.USD.price + "</td>" + "</tr>"
           $(tblRow).appendTo("#ticker4 tbody");
     });
-
   });
-
 });
+
 $(function() {
-
   var ticker = [];
-
   $.getJSON('https://api.coinmarketcap.com/v2/ticker/?start=5&limit=1&sort=rank&structure=array', function(data) {
       $.each(data.data, function(i, f) {
-         var tblRow = "<tr>" + "<td>" + "<img src='./SVG/"+f.symbol+".svg' width='65px' height='65px'>  "+ f.rank + ") </td>" +
+         var tblRow = "<tr>" + "<td>" + f.rank + ") </td>" +
           "<td>" + f.symbol + "</td>" + "<td> $" + f.quotes.USD.price + "</td>" + "</tr>"
           $(tblRow).appendTo("#ticker5 tbody");
     });
-
   });
-
 });
+
 $(function() {
-
   var ticker = [];
-
   $.getJSON('https://api.coinmarketcap.com/v2/ticker/?start=6&limit=1&sort=rank&structure=array', function(data) {
       $.each(data.data, function(i, f) {
-         var tblRow = "<tr>" + "<td>" + "<img src='./SVG/"+f.symbol+".svg' width='65px' height='65px'>  "+ f.rank + ") </td>" +
+         var tblRow = "<tr>" + "<td>" + f.rank + ") </td>" +
           "<td>" + f.symbol + "</td>" + "<td> $" + f.quotes.USD.price + "</td>" + "</tr>"
           $(tblRow).appendTo("#ticker6 tbody");
     });
-
   });
-
 });
+
 $(function() {
-
   var ticker = [];
-
   $.getJSON('https://api.coinmarketcap.com/v2/ticker/?start=7&limit=1&sort=rank&structure=array', function(data) {
       $.each(data.data, function(i, f) {
-         var tblRow = "<tr>" + "<td>" + "<img src='./SVG/"+f.symbol+".svg' width='65px' height='65px'>  "+ f.rank + ") </td>" +
+         var tblRow = "<tr>" + "<td>" + f.rank + ") </td>" +
           "<td>" + f.symbol + "</td>" + "<td> $" + f.quotes.USD.price + "</td>" + "</tr>"
           $(tblRow).appendTo("#ticker7 tbody");
     });
-
   });
-
 });
+
 $(function() {
-
   var ticker = [];
-
   $.getJSON('https://api.coinmarketcap.com/v2/ticker/?start=8&limit=1&sort=rank&structure=array', function(data) {
       $.each(data.data, function(i, f) {
-         var tblRow = "<tr>" + "<td>" + "<img src='./SVG/"+f.symbol+".svg' width='65px' height='65px'>  "+ f.rank + ") </td>" +
+         var tblRow = "<tr>" + "<td>" + f.rank + ") </td>" +
           "<td>" + f.symbol + "</td>" + "<td> $" + f.quotes.USD.price + "</td>" + "</tr>"
           $(tblRow).appendTo("#ticker8 tbody");
     });
-
   });
-
 });
+
 $(function() {
-
   var ticker = [];
-
   $.getJSON('https://api.coinmarketcap.com/v2/ticker/?start=9&limit=1&sort=rank&structure=array', function(data) {
       $.each(data.data, function(i, f) {
-         var tblRow = "<tr>" + "<td>" + "<img src='./SVG/"+f.symbol+".svg' width='65px' height='65px'>  "+ f.rank + ") </td>" +
+         var tblRow = "<tr>" + "<td>" + f.rank + ") </td>" +
           "<td>" + f.symbol + "</td>" + "<td> $" + f.quotes.USD.price + "</td>" + "</tr>"
           $(tblRow).appendTo("#ticker9 tbody");
     });
-
   });
-
 });
+
 $(function() {
-
   var ticker = [];
-
   $.getJSON('https://api.coinmarketcap.com/v2/ticker/?start=10&limit=1&sort=rank&structure=array', function(data) {
       $.each(data.data, function(i, f) {
-         var tblRow = "<tr>" + "<td>" + "<img src='./SVG/"+f.symbol+".svg' width='65px' height='65px'>  "+ f.rank + ") </td>" +
+         var tblRow = "<tr>" + "<td>" + f.rank + ") </td>" +
           "<td>" + f.symbol + "</td>" + "<td> $" + f.quotes.USD.price + "</td>" + "</tr>"
           $(tblRow).appendTo("#ticker10 tbody");
     });
-
   });
-
 });
 
 
