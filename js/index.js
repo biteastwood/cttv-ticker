@@ -146,18 +146,6 @@ $(function() {
 
 
 var settings = {
-    hypers: {
-      rank1: 1,
-      rank2: 2,
-      rank3: 3,
-      rank4: 4,
-      rank5: 5,
-      rank6: 6,
-      rank7: 7,
-      rank8: 8,
-      rank9: 9,
-      rank10: 10,
-    },
     popup: {
       enableRank1: 1,
       enableRank2: 1,
@@ -168,36 +156,19 @@ var settings = {
       enableRank7: 1,
       enableRank8: 1,
       enableRank9: 1,
-      enableRank10: 1,
-      enableRank11: 0,
-      enableRank12: 0,
-      enableRank13: 0,
-      enableRank14: 0,
-      enableRank15: 0,
-      enableRank16: 0,
-      enableRank17: 0,
-      enableRank18: 0,
-      enableRank19: 0,
-      enableRank20: 0,
-      
+      enableRank10: 1,      
       
       //
       // Times to update
       //
       
       // Time each network animation takes in seconds
-      aTime: 4,
+      aTime: 7,
       
       // The delay for the animation cycle to restart in seconds
-      pauseTime: 5
+      pauseTime: 1
     }
   };
-  
-  // Load hypers ranks
-  $( ".popup .right span" ).each(function() {
-      var hypersName = settings.hypers[$(this).data('name')];
-      $(this).append( hypersName );
-  });
   
   // Load hypers Popup
   $(".popup").each(function() {
