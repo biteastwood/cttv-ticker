@@ -34,52 +34,42 @@ body {
   color: #000000;
 }
 .popup .left .rank1:before {
-  background: url("../SVG/BTC.svg") no-repeat 10px 10px;
   background-position: center;
   background-size: contain;
 }
 .popup .left .rank2:before {
-  background: url("../SVG/ETH.svg") no-repeat 10px 10px;
   background-position: center;
   background-size: contain;
 }
 .popup .left .rank3:before {
-  background: url("../SVG/BCH.svg") no-repeat 10px 10px;
   background-position: center;
   background-size: contain;
 }
 .popup .left .rank4:before {
-  background: url("../SVG/BTC.svg") no-repeat 10px 10px;
   background-position: center;
   background-size: contain;
 }
 .popup .left .rank5:before {
-  background: url("../SVG/BTC.svg") no-repeat 10px 10px;
   background-position: center;
   background-size: contain;
 }
 .popup .left .rank6:before {
-  background: url("../SVG/BTC.svg") no-repeat 10px 10px;
   background-position: center;
   background-size: contain;
 }
 .popup .left .rank7:before {
-  background: url("../SVG/BTC.svg") no-repeat 10px 10px;
   background-position: center;
   background-size: contain;
 }
 .popup .left .rank8:before {
-  background: url("../SVG/BTC.svg") no-repeat 10px 10px;
   background-position: center;
   background-size: contain;
 }
 .popup .left .rank9:before {
-  background: url("../SVG/BTC.svg") no-repeat 10px 10px;
   background-position: center;
   background-size: contain;
 }
 .popup .left .rank10:before {
-  background: url("../SVG/BTC.svg") no-repeat 10px 10px;
   background-position: center;
   background-size: contain;
 }
