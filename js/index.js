@@ -104,7 +104,7 @@ $(function() {
   var ticker = [];
   $.getJSON('https://api.coinmarketcap.com/v2/ticker/?start=1&limit=1&sort=rank&structure=array', function(data) {
       $.each(data.data, function(i, f) {
-         var tblRow = "<tr>" + "<td>" + f.rank + ") " + f.symbol + "</td>" + "</tr>" 
+         var tblRow = "<tr>" + "<td>" + f.rank + ". " + f.symbol + "</td>" + "</tr>" 
          + "<tr>" + "<td> $" + f.quotes.USD.price.toFixed(4) + "</td>" + "</tr>"
           $(tblRow).appendTo("#ticker1 tbody");
     });
@@ -116,7 +116,7 @@ $(function() {
   var ticker = [];
   $.getJSON('https://api.coinmarketcap.com/v2/ticker/?start=2&limit=1&sort=rank&structure=array', function(data) {
       $.each(data.data, function(i, f) {
-         var tblRow = "<tr>" + "<td>" + f.rank + ") " + f.symbol + "</td>" + "</tr>" 
+         var tblRow = "<tr>" + "<td>" + f.rank + ". " + f.symbol + "</td>" + "</tr>" 
          + "<tr>" + "<td> $" + f.quotes.USD.price.toFixed(4) + "</td>" + "</tr>"
           $(tblRow).appendTo("#ticker2 tbody");
     });
@@ -127,7 +127,7 @@ $(function() {
   var ticker = [];
   $.getJSON('https://api.coinmarketcap.com/v2/ticker/?start=3&limit=1&sort=rank&structure=array', function(data) {
       $.each(data.data, function(i, f) {
-         var tblRow = "<tr>" + "<td>" + f.rank + ") " + f.symbol + "</td>" + "</tr>" 
+         var tblRow = "<tr>" + "<td>" + f.rank + ". " + f.symbol + "</td>" + "</tr>" 
          + "<tr>" + "<td> $" + f.quotes.USD.price.toFixed(4) + "</td>" + "</tr>"
           $(tblRow).appendTo("#ticker3 tbody");
     });
@@ -138,7 +138,7 @@ $(function() {
   var ticker = [];
   $.getJSON('https://api.coinmarketcap.com/v2/ticker/?start=4&limit=1&sort=rank&structure=array', function(data) {
       $.each(data.data, function(i, f) {
-         var tblRow = "<tr>" + "<td>" + f.rank + ") " + f.symbol + "</td>" + "</tr>" 
+         var tblRow = "<tr>" + "<td>" + f.rank + ". " + f.symbol + "</td>" + "</tr>" 
          + "<tr>" + "<td> $" + f.quotes.USD.price.toFixed(4) + "</td>" + "</tr>"
           $(tblRow).appendTo("#ticker4 tbody");
     });
@@ -149,7 +149,7 @@ $(function() {
   var ticker = [];
   $.getJSON('https://api.coinmarketcap.com/v2/ticker/?start=5&limit=1&sort=rank&structure=array', function(data) {
       $.each(data.data, function(i, f) {
-         var tblRow = "<tr>" + "<td>" + f.rank + ") " + f.symbol + "</td>" + "</tr>" 
+         var tblRow = "<tr>" + "<td>" + f.rank + ". " + f.symbol + "</td>" + "</tr>" 
          + "<tr>" + "<td> $" + f.quotes.USD.price.toFixed(4) + "</td>" + "</tr>"
           $(tblRow).appendTo("#ticker5 tbody");
     });
@@ -160,7 +160,7 @@ $(function() {
   var ticker = [];
   $.getJSON('https://api.coinmarketcap.com/v2/ticker/?start=6&limit=1&sort=rank&structure=array', function(data) {
       $.each(data.data, function(i, f) {
-         var tblRow = "<tr>" + "<td>" + f.rank + ") " + f.symbol + "</td>" + "</tr>" 
+         var tblRow = "<tr>" + "<td>" + f.rank + ". " + f.symbol + "</td>" + "</tr>" 
          + "<tr>" + "<td> $" + f.quotes.USD.price.toFixed(4) + "</td>" + "</tr>"
           $(tblRow).appendTo("#ticker6 tbody");
     });
@@ -171,7 +171,7 @@ $(function() {
   var ticker = [];
   $.getJSON('https://api.coinmarketcap.com/v2/ticker/?start=7&limit=1&sort=rank&structure=array', function(data) {
       $.each(data.data, function(i, f) {
-         var tblRow = "<tr>" + "<td>" + f.rank + ") " + f.symbol + "</td>" + "</tr>" 
+         var tblRow = "<tr>" + "<td>" + f.rank + ". " + f.symbol + "</td>" + "</tr>" 
          + "<tr>" + "<td> $" + f.quotes.USD.price.toFixed(4) + "</td>" + "</tr>"
           $(tblRow).appendTo("#ticker7 tbody");
     });
@@ -182,7 +182,7 @@ $(function() {
   var ticker = [];
   $.getJSON('https://api.coinmarketcap.com/v2/ticker/?start=8&limit=1&sort=rank&structure=array', function(data) {
       $.each(data.data, function(i, f) {
-         var tblRow = "<tr>" + "<td>" + f.rank + ") " + f.symbol + "</td>" + "</tr>" 
+         var tblRow = "<tr>" + "<td>" + f.rank + ". " + f.symbol + "</td>" + "</tr>" 
          + "<tr>" + "<td> $" + f.quotes.USD.price.toFixed(4) + "</td>" + "</tr>"
           $(tblRow).appendTo("#ticker8 tbody");
     });
@@ -193,7 +193,7 @@ $(function() {
   var ticker = [];
   $.getJSON('https://api.coinmarketcap.com/v2/ticker/?start=9&limit=1&sort=rank&structure=array', function(data) {
       $.each(data.data, function(i, f) {
-         var tblRow = "<tr>" + "<td>" + f.rank + ") " + f.symbol + "</td>" + "</tr>" 
+         var tblRow = "<tr>" + "<td>" + f.rank + ". " + f.symbol + "</td>" + "</tr>" 
          + "<tr>" + "<td> $" + f.quotes.USD.price.toFixed(4) + "</td>" + "</tr>"
           $(tblRow).appendTo("#ticker9 tbody");
     });
@@ -204,7 +204,7 @@ $(function() {
   var ticker = [];
   $.getJSON('https://api.coinmarketcap.com/v2/ticker/?start=10&limit=1&sort=rank&structure=array', function(data) {
       $.each(data.data, function(i, f) {
-         var tblRow = "<tr>" + "<td>" + f.rank + ") " + f.symbol + "</td>" + "</tr>" 
+         var tblRow = "<tr>" + "<td>" + f.rank + ". " + f.symbol + "</td>" + "</tr>" 
          + "<tr>" + "<td> $" + f.quotes.USD.price.toFixed(4) + "</td>" + "</tr>"
           $(tblRow).appendTo("#ticker10 tbody");
     });
@@ -230,10 +230,10 @@ var settings = {
       //
       
       // Time each network animation takes in seconds
-      aTime: 7,
+      aTime: 1.5,
       
       // The delay for the animation cycle to restart in seconds
-      pauseTime: 1
+      pauseTime: 0.5
     }
   };
   
