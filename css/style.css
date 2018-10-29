@@ -1,8 +1,5 @@
-.body {
+body {
   background: transparent;
-}
-svg path {
-  fill: goldenrod;
 }
 .popup-container {
   width: 470px;
