@@ -230,10 +230,10 @@ var settings = {
       //
       
       // Time each network animation takes in seconds
-      aTime: 1.5,
+      aTime: 3,
       
       // The delay for the animation cycle to restart in seconds
-      pauseTime: 0.5
+      pauseTime: 1
     }
   };
   
