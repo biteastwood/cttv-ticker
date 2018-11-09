@@ -1,5 +1,7 @@
 body {
   background: transparent;
+  background-image: url("../PNG/cttv_bg.png");
+  background-repeat: no-repeat;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -12,7 +14,13 @@ body {
   background: transparent;
   top: 0;
   left: 0;
-  overflow: hidden;
+}
+
+.cttv-logo {
+  width: 95px;
+  height: 95px;
+  padding-right: 480px;
+  background: transparent;
 }
 
 .popup {
@@ -20,12 +28,13 @@ body {
   height: 60px;
   background: transparent;
   display: none;
+  white-space: nowrap;
 }
 .popup .left {
   background: transparent;
-  padding-left: 25px;
+  padding-left: 0px;
   height: 60px;
-  width: 60px;
+  width: 39px;
   float: left;
 }
 .popup .left span:before {
